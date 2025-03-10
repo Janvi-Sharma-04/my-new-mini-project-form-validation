@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1>Form Validation</h1>
+
+        <form action="" id="form">
+
+            <div class="Form-field">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Enter your full name" name="" id="name">
+                <span class="error"></span>
+            </div>
+
+            <div class="Form-field">
+                <label for="email">Email Address</label>
+                <input type="email" placeholder="Enter your email" name="" id="email">
+                <span class="error"></span>
+            </div>
+
+            <div class="Form-field">
+                <label for="contact">Contact Number</label>
+                <input type="text" placeholder="Enter your contact number" name="" id="contact">
+                <span class="error"></span>
+            </div>
+
+            <div class="Form-field">
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" placeholder="create a password" name="" id="password">
+                    <button type="button" id="togglePassword" class="toggle-password">👁️</button>
+                    <span class="error"></span>
+                </div>
+            </div>
+
+            <div class="Form-field">
+                <label for="password">Confirm Password</label>
+                <div class="password-container">
+                    <input type="text" placeholder="confirm your password" name="" id="confirmpassword">
+                    <button type="button" id="togglePasswordconfirm" class="toggle-password">👁️</button>
+                    <span class="error"></span>
+                </div>
+            </div>
+
+            <div class="Form-field">
+                <label for="city">City</label>
+                <input type="text" placeholder="Enter your city" name="" id="city">
+                <span class="error"></span>
+            </div>
+
+            <div class="Form-field">
+                <label for="country">Country</label>
+                <input type="text" placeholder="Enter your country" name="" id="country">
+                <span class="error"></span>
+            </div>
+
+            <div class="auth-buttons">
+                <button class="submit" type="submit">Submit</button>
+            </div>
+
+            <p id="successMessage" class="success"></p>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

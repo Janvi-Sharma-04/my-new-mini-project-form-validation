@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  background-color: #6bc1c7;
+  color: black ;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffff;
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  /* background-image: linear-gradient(red green, blue); */
+  background: linear-gradient(120deg, rgb(34, 0, 255), rgb(247, 7, 171), rgb(126, 255, 5));
+  color: transparent;
+  background-clip: text;
+}
+
+.Form-field {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 20px;
+  color: #040404;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+::placeholder {
+  font-size: 20px;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  font-size: 20px;
+  color: #0c0b0b;
+  background: #d9f318;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px #dbcb21, ;
+}
+
+.auth-buttons button:hover {
+  box-shadow: inset 5px 5px 10px #fafa1e, ;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 25px;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  font-size: 15px;
+  padding: 8px;
+  display: none;
+}
+
+.success {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
